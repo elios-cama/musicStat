@@ -1,0 +1,30 @@
+# Ignore all files in the root directory except for the .env file
+*.env
+
+# Ignore database files
+*.sqlite3
+
+# Ignore media files
+/media/
+
+# Ignore static files
+/staticfiles/
+
+# Ignore compiled Python files
+*.pyc
+__pycache__/
+
+# Ignore log files
+*.log
+
+# Ignore local settings file
+/local_settings.py
+
+# Ignore IDE specific files
+.vscode/
+.idea/
+*.pydevproject
+
+# Ignore virtual environment files
+venv/
+

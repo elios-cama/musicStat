@@ -1,15 +1,16 @@
 {% load static %}
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
     <title>Music Grids</title>
-  </head>
-  <body>
-      <div class="container">
-        <h1 class="title">Music Grids</h1>
-        <p class="subtitle">Create grids out of your favorite playlists</p>
-        <button class="generate-button">Click to generate</button>
-      </div>
-  </body>
+</head>
+<body>
+<div class="container">
+    <h1 class="title">Music Grids</h1>
+    <p class="subtitle">Create grids out of your favorite playlists</p>
+     <a href="{% url 'deezer_auth' %}" class="generate-button">Click to generate</a>
+    </div>
+</div>
+</body>
 </html>
