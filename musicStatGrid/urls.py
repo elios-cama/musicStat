@@ -7,4 +7,5 @@ urlpatterns = [
     path('connected/', views.connected, name='connected'),
     path('deezer_auth/', views.deezer_auth, name='deezer_auth'),
     path('deezer_callback/', views.deezer_callback, name='deezer_callback'),
+    path('most_liked_tracks/', views.fetching_most_liked_tracks, name='fetching_most_liked_tracks'),
 ]

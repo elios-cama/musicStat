@@ -1,11 +1,16 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
-    <title>You're connected!</title>
+    <title>Connected to Deezer</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 <body>
-<h1>You're connected to Deezer!</h1>
-<h1>the access token is : {{ access_token }}!</h1>
+<div class="container">
+    <h1>Welcome to your Deezer</h1>
+    <form action="{% url 'fetching_most_liked_tracks' %}" method="get">
+        <button type="submit" class="generate-button">Generate the grid of your 25 most liked songs</button>
+    </form>
+</div>
 </body>
 </html>
->
